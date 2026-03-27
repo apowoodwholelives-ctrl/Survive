@@ -9,7 +9,7 @@ export enum CollectType {
 
 @ccclass('Collectible')
 export class Collectible extends Component {
-    @property({ type: CollectType }) type = CollectType.WOOD;
+    @property type = CollectType.WOOD;
     @property harvestCount = 1;
 
     onLoad() {
